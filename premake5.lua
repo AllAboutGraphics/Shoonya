@@ -18,6 +18,9 @@ project "Shoonya"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "shpch.h"
+    pchsource "Shoonya/src/shpch.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",
