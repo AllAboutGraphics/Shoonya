@@ -9,7 +9,7 @@ namespace Shoonya
 		public:
 			Application();
 			virtual ~Application();
-			void Run();
+			virtual void Run();
 	};
 
 	//To be defined in the client application

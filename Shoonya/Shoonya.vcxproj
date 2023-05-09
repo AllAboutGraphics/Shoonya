@@ -146,6 +146,10 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Shoonya\EventsHandler\ApplicationEvent.h" />
+    <ClInclude Include="src\Shoonya\EventsHandler\Event.h" />
+    <ClInclude Include="src\Shoonya\EventsHandler\KeyEvent.h" />
+    <ClInclude Include="src\Shoonya\EventsHandler\MouseEvent.h" />
     <ClInclude Include="src\Shoonya\Log.h" />
     <ClInclude Include="src\Shoonya.h" />
     <ClInclude Include="src\Shoonya\Application.h" />
