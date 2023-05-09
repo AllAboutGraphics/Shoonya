@@ -1,0 +1,3 @@
+[submodule "Shoonya/vendor/spdlog"]
+	path = Shoonya/vendor/spdlog
+	url = https://github.com/gabime/spdlog

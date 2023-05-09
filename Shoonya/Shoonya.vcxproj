@@ -146,12 +146,14 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Shoonya\Log.h" />
     <ClInclude Include="src\Shoonya.h" />
     <ClInclude Include="src\Shoonya\Application.h" />
     <ClInclude Include="src\Shoonya\Core.h" />
     <ClInclude Include="src\Shoonya\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Shoonya\Log.cpp" />
     <ClCompile Include="src\Shoonya\Application.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -16,10 +16,12 @@
     <ClInclude Include="src\Shoonya\EntryPoint.h">
       <Filter>Shoonya</Filter>
     </ClInclude>
+    <ClInclude Include="src\Shoonya\Log.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Shoonya\Application.cpp">
       <Filter>Shoonya</Filter>
     </ClCompile>
+    <ClCompile Include="src\Shoonya\Log.cpp" />
   </ItemGroup>
 </Project>
