@@ -1,7 +1,6 @@
 #pragma once
 
-#include <string>
-#include <functional>
+#include "shpch.h"
 #include "Shoonya\Core.h"
 
 namespace Shoonya

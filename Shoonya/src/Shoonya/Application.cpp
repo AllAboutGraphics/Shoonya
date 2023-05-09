@@ -1,3 +1,4 @@
+#include "shpch.h"
 #include "Application.h"
 
 // For Testing

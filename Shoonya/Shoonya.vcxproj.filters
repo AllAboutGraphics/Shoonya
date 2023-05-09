@@ -4,6 +4,9 @@
     <Filter Include="Shoonya">
       <UniqueIdentifier>{463391F3-B212-108F-BB2A-9B65278976F0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shoonya\EventsHandler">
+      <UniqueIdentifier>{A80A04E8-1477-BFE2-DD6A-57404996E14A}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Shoonya.h" />
@@ -16,16 +19,30 @@
     <ClInclude Include="src\Shoonya\EntryPoint.h">
       <Filter>Shoonya</Filter>
     </ClInclude>
-    <ClInclude Include="src\Shoonya\Log.h" />
-    <ClInclude Include="src\Shoonya\EventsHandler\Event.h" />
-    <ClInclude Include="src\Shoonya\EventsHandler\KeyEvent.h" />
-    <ClInclude Include="src\Shoonya\EventsHandler\MouseEvent.h" />
-    <ClInclude Include="src\Shoonya\EventsHandler\ApplicationEvent.h" />
+    <ClInclude Include="src\Shoonya\EventsHandler\ApplicationEvent.h">
+      <Filter>Shoonya\EventsHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shoonya\EventsHandler\Event.h">
+      <Filter>Shoonya\EventsHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shoonya\EventsHandler\KeyEvent.h">
+      <Filter>Shoonya\EventsHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shoonya\EventsHandler\MouseEvent.h">
+      <Filter>Shoonya\EventsHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shoonya\Log.h">
+      <Filter>Shoonya</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Shoonya\Application.cpp">
       <Filter>Shoonya</Filter>
     </ClCompile>
-    <ClCompile Include="src\Shoonya\Log.cpp" />
+    <ClCompile Include="src\Shoonya\Log.cpp">
+      <Filter>Shoonya</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shpch.cpp" />
   </ItemGroup>
 </Project>

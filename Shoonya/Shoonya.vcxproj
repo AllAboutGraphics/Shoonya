@@ -76,7 +76,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>shpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>SH_PLATFORM_WINDOWS;SH_BUILD_DLL;SH_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>vendor\spdlog\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -97,7 +98,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>shpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>SH_PLATFORM_WINDOWS;SH_BUILD_DLL;SH_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>vendor\spdlog\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -122,7 +124,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>shpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>SH_PLATFORM_WINDOWS;SH_BUILD_DLL;SH_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>vendor\spdlog\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -146,19 +149,23 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Shoonya.h" />
+    <ClInclude Include="src\Shoonya\Application.h" />
+    <ClInclude Include="src\Shoonya\Core.h" />
+    <ClInclude Include="src\Shoonya\EntryPoint.h" />
     <ClInclude Include="src\Shoonya\EventsHandler\ApplicationEvent.h" />
     <ClInclude Include="src\Shoonya\EventsHandler\Event.h" />
     <ClInclude Include="src\Shoonya\EventsHandler\KeyEvent.h" />
     <ClInclude Include="src\Shoonya\EventsHandler\MouseEvent.h" />
     <ClInclude Include="src\Shoonya\Log.h" />
-    <ClInclude Include="src\Shoonya.h" />
-    <ClInclude Include="src\Shoonya\Application.h" />
-    <ClInclude Include="src\Shoonya\Core.h" />
-    <ClInclude Include="src\Shoonya\EntryPoint.h" />
+    <ClInclude Include="src\shpch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Shoonya\Log.cpp" />
     <ClCompile Include="src\Shoonya\Application.cpp" />
+    <ClCompile Include="src\Shoonya\Log.cpp" />
+    <ClCompile Include="src\shpch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
